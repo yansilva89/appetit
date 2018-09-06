@@ -1,0 +1,153 @@
+[
+    {
+        "id": 0,
+        "name": "Coxinha",
+        "type": [{
+            "id": 0,
+            "name": "snack"
+          }],
+        "image": "../assets/img/produtos/coxinha.png",
+        "price": 3.50
+    },
+    {
+        "id": 1,
+        "name": "Misto",
+        "type": [{
+            "id": 0,
+            "name": "snack"
+          }],
+        "image": "../assets/img/produtos/misto.jpg",
+        "price": 3.50
+    },
+    {
+        "id": 2,
+        "name": "Cuzcuz",
+        "type": [{
+            "id": 0,
+            "name": "snack"
+          }],
+        "image": "../assets/img/produtos/cuscuz.jpg",
+        "price": 3.50
+    },
+    {
+        "id": 3,
+        "name": "Beiju",
+        "type": [{
+            "id": 0,
+            "name": "snack"
+          }],
+        "image": "../assets/img/produtos/beiju.png",
+        "price": 3.50
+    },
+    {
+        "id": 4,
+        "name": "Bolo de Chocolate",
+        "type": [{
+            "id": 0,
+            "name": "snack"
+          }],
+        "image": "../assets/img/produtos/bolo_chocolate.jpg",
+        "price": 3.50
+    }, 
+    {
+        "id": 5,
+        "name": "S. de Abacaxi",
+        "type": [{
+            "id": 1,
+            "name": "juice"
+          }],
+        "image": "../assets/img/produtos/juices/abacaxi.png",
+        "price": 3.50
+    },  
+    {
+        "id": 6,
+        "name": "S. de Acerola",
+        "type": [{
+            "id": 1,
+            "name": "juice"
+          }],
+        "image": "../assets/img/produtos/juices/acerola.png",
+        "price": 3.50
+    },
+    {
+        "id": 7,
+        "name": "S. de Maracuja",
+        "type": [{
+            "id": 1,
+            "name": "juice"
+          }],
+        "image": "../assets/img/produtos/juices/maracuja.png",
+        "price": 3.50
+    },  
+    {
+        "id": 8,
+        "name": "S. de Limao",
+        "type": [{
+            "id": 1,
+            "name": "juice"
+          }],
+        "image": "../assets/img/produtos/juices/limao.png",
+        "price": 3.50
+    },  
+    {
+        "id": 9,
+        "name": "S. de Laranja",
+        "type": [{
+            "id": 1,
+            "name": "juice"
+          }],
+        "image": "../assets/img/produtos/juices/laranja.png",
+        "price": 3.50
+    },   
+    {
+        "id": 10,
+        "name": "Presunto",
+        "type": [{
+            "id": 2,
+            "name": "aditional"
+          }],
+        "image": "../assets/img/produtos/aditional/presunto.png",
+        "price": 0.50
+    },  
+    {
+        "id": 11,
+        "name": "Queijo",
+        "type": [{
+            "id": 2,
+            "name": "aditional"
+          }],
+        "image": "../assets/img/produtos/aditional/queijo.png",
+        "price": 0.50
+    }, 
+    {
+        "id": 12,
+        "name": "Bacon",
+        "type": [{
+            "id": 2,
+            "name": "aditional"
+          }],
+        "image": "../assets/img/produtos/aditional/bacon.png",
+        "price": 0.50
+    },  
+    {
+        "id": 13,
+        "name": "Ovo",
+        "type": [{
+            "id": 2,
+            "name": "aditional"
+          }],
+        "image": "../assets/img/produtos/aditional/ovo.png",
+        "price": 0.50
+    },
+    {
+        "id": 14,
+        "name": "Molho",
+        "type": [{
+            "id": 2,
+            "name": "aditional"
+          }],
+        "image": "../assets/img/produtos/aditional/ovo.png",
+        "price": 0.50
+    }
+]
+            

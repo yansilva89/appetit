@@ -1,0 +1,89 @@
+<div class="d-flex checkout-box">
+  <div class="checkout-in">
+    <div class="d-flex checkout-top">
+      <div class="d-flex checkout-title">
+        <a href="">
+          <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </a>
+        <h1>Itens</h1>
+      </div>
+    </div>
+
+    <div class="d-flex itens-details">
+      <div class="d-flex list-itens">
+        <div class="d-flex product-item">          
+          <p>Misto</p>
+        </div>
+        <div class="d-flex number">
+          <p>2</p>
+        </div>        
+        <p>+ Queijo</p>
+        <p>+ Presunto</p>
+      </div>
+      <div class="itens-quantity">
+          <div class="d-flex itens-counter">
+            <a href="javascript:void(0);" (click)="decrement()">
+              <div class="d-flex minus">
+                <fa-icon [icon]="faMinus"></fa-icon>
+              </div>
+            </a>
+            <h1>{{counter}}</h1>
+            <a href="javascript:void(0);" (click)="increment()">
+              <div class="d-flex plus">
+                <fa-icon [icon]="faPlus"></fa-icon>
+              </div>
+            </a>
+          </div>
+          <p>R$ 9,00</p>
+        </div>
+    </div>
+
+    <div class="d-flex itens-details">
+        <div class="d-flex list-itens">
+          <div class="d-flex product-item">          
+            <p>Misto</p>
+          </div>
+          <div class="d-flex number">
+            <p>2</p>
+          </div>        
+          <p>+ Queijo</p>
+          <p>+ Presunto</p>
+        </div>
+        <div class="itens-quantity">
+            <div class="d-flex itens-counter">
+              <a href="javascript:void(0);" (click)="decrement()">
+                <div class="d-flex minus">
+                  <fa-icon [icon]="faMinus"></fa-icon>
+                </div>
+              </a>
+              <h1>{{counter}}</h1>
+              <a href="javascript:void(0);" (click)="increment()">
+                <div class="d-flex plus">
+                  <fa-icon [icon]="faPlus"></fa-icon>
+                </div>
+              </a>
+            </div>
+            <p>R$ 9,00</p>
+          </div>
+      </div>
+
+      <div class="d-flex total">
+          <div class="price-total">
+            <h3>Total</h3>
+            <h1>R$ 3,50</h1>
+          </div>
+          <div class="d-flex btns">
+            <a href="">
+              <div class="d-flex cancel">
+                <fa-icon [icon]="faTimes"></fa-icon>
+              </div>
+            </a>
+            <a href="">
+              <div class="d-flex confirm">
+                <p>confirmar</p>
+              </div>
+            </a>
+          </div>
+        </div>
+  </div>
+</div>

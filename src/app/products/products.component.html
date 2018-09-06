@@ -1,0 +1,31 @@
+<div class="d-flex product-box">
+  <div class="products-list d-flex">
+    <h1>Cardápio</h1>
+    <h4>Lanches</h4>
+    <div class="product d-flex">
+      <div class="product-in" *ngFor="let p of snacks">
+        <a [routerLink]="['/detalhes', p.id]">
+          <img src="{{p.image}}" alt="">
+          <div class="product-text">
+            <h3>{{p.name}}</h3>
+            <h4>{{p.price}}</h4>
+            <p>Adicionais Disponíveis</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <h4>Sucos</h4>
+    <div class="product d-flex">
+        <div class="product-in" *ngFor="let p of juice">
+          <a [routerLink]="['/sucos', p.id]">
+            <img src="{{p.image}}" alt="">
+            <div class="product-text">
+              <h3>{{p.name}}</h3>
+              <h4>{{p.price}}</h4>
+              <p>Adicionais Disponíveis</p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<div class="d-flex juice-box">
+  <div class="juice-in">
+    <div class="d-flex juice-top">
+      <div class="d-flex juice-title">
+        <a href="">
+          <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </a>
+        <h1>Sucos</h1>
+      </div>
+    </div>
+    <div class="flavor">
+      <h3>Sabores</h3>
+      <div class="d-flex flavor-list">
+        <div class="d-flex flavor-item" [class.active]="p.active" *ngFor="let p of juice" (click)="checkedActiveItem($event, p)">
+          <a href="javascript:void(0);">
+            <figure>
+              <img src="{{ p.image }}" alt="">
+              <span class="flavor-count">1</span>
+            </figure>
+            <div class="flavor-text">
+              <h3>{{ p.name }}</h3>
+              <h4>R$&nbsp;{{ p.price.toFixed(2).toString().replace(".", ",") }}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex milk">
+      <h3>Leite</h3>
+      <div class="material-switch pull-right">
+        <input id="someSwitchOptionDefault" name="someSwitchOption001" type="checkbox" />
+        <label for="someSwitchOptionDefault" class="label-default"></label>
+      </div>
+    </div>
+
+    <div class="juice-quantity">
+      <h3>Quantidade</h3>
+      <div class="d-flex juice-counter">
+        <a href="javascript:void(0);" (click)="decrement()">
+          <div class="d-flex minus">
+            <fa-icon [icon]="faMinus"></fa-icon>
+          </div>
+        </a>
+        <h1>{{counter}}</h1>
+        <a href="javascript:void(0);" (click)="increment()">
+          <div class="d-flex plus">
+            <fa-icon [icon]="faPlus"></fa-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="d-flex total">
+      <div class="price-total">
+        <h3>Total</h3>
+        <h1>R$ 3,50</h1>
+      </div>
+      <div class="d-flex btns">
+        <a href="">
+          <div class="d-flex cancel">
+            <fa-icon [icon]="faTimes"></fa-icon>
+          </div>
+        </a>
+        <a href="">
+          <div class="d-flex confirm">
+            <p>confirmar</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

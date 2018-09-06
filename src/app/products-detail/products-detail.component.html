@@ -1,0 +1,59 @@
+<div class="d-flex details-box">
+  <div class="details-in">
+    <div class="d-flex w-100 details-top">
+      <div class="d-flex details-title" *ngIf="selectedObj">
+        <a href="">
+          <fa-icon [icon]="faArrowLeft"></fa-icon>
+        </a>
+        <h1>{{ selectedObj.name }}</h1>
+      </div>
+      <div class="d-flex details-price-top">
+        <p>R$ 3,50</p>
+      </div>
+    </div>
+    <div class="quantity">
+      <h3>Quantidade</h3>
+      <div class="d-flex counter">
+        <a href="javascript:void(0);" (click)="decrement()">
+          <div class="d-flex minus">
+            <fa-icon [icon]="faMinus"></fa-icon>
+          </div>
+        </a>
+        <h1>{{counter}}</h1>
+        <a href="javascript:void(0);" (click)="increment()">
+          <div class="d-flex plus">
+            <fa-icon [icon]="faPlus"></fa-icon>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="aditional">
+      <h3>Adicionais</h3>
+      <div class="d-flex add-list">
+        <div class="d-flex add-item" [class.active]="add.active" *ngFor="let add of aditional" (click)="checkedActiveItem($event, add)">
+          <a href="javascript:void(0);">
+            <figure>
+              <img src="{{ add.image }}" alt="">
+              <span class="add-count">1</span>
+            </figure>
+            <div class="add-text">
+              <h3>{{ add.name }}</h3>
+              <h4>R$&nbsp;{{ add.price.toFixed(2).toString().replace(".", ",") }}</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex total">
+      <div class="price-total">
+        <h3>Total</h3>
+        <h1>R$ 4,00</h1>
+      </div>
+      <a href="">
+        <div class="d-flex confirm">
+          <p>confirmar</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+// Variables Colors
+$orange: #F2905F;
+
+.product-box {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+
+  .products-list {
+    background-color: #fff;
+    box-shadow: 0px 4px 15px #b1b1b1;
+    flex-direction: column;
+    width: 50%;
+    padding: 1rem;
+    position: absolute;
+    top: 210px;
+    margin-bottom: 2rem;
+
+    h1 {
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      margin-bottom: 0; 
+    }
+
+    .product {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 5px 0;
+
+      .product-in {
+        flex-basis: 31%;
+        max-width: 31%;
+        margin: 5px 1%;
+        box-shadow: 0px 4px 10px #b9b9b9;
+
+        a {
+          text-decoration: none;
+
+          img {
+            width: 100%;
+          }
+
+          .product-text {
+            padding: 0.5rem 0.8rem;
+
+            h3 {
+              color: #000;
+              font-size: 1.3rem;
+            }
+
+            h4 {
+              color: $orange;
+              font-size: 1.1rem;
+            }
+
+            p {
+              color: #828282;
+              font-size: 0.8rem;
+              margin-bottom: 0;
+              ;
+            }
+          }
+        }
+      }
+    }
+  }
+}

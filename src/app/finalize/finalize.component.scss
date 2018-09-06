@@ -1,0 +1,111 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+body {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+}
+
+// Variables Colors
+$orange: #F2905F;
+$red: #EA6172;
+$green: #009688;
+$green-plus: #7ED321;
+
+.finalize-box {
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  font-family: "Roboto", sans-serif !important;
+
+  .finalize-in {
+    background-color: #fff;
+    box-shadow: 0px 4px 15px #7d7a7a;
+    width: 50%;
+    position: absolute;
+    top: 210px;
+    margin-bottom: 2rem;
+
+    .finalize-top {
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: $orange;
+
+      .finalize-title {
+        flex-direction: column;
+
+        h3 {
+          font-size: 1rem;
+          margin-bottom: 0.8rem;
+          font-weight: 400;
+          color: #fff;
+        }
+
+        h4 {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: #fff;
+            opacity: 0.7;
+          }
+
+          h1 {
+            font-size: 2rem;
+            margin-bottom: 0;
+            font-weight: 400;
+            color: #fff;
+          }
+      }
+      .close-top {
+          a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1.5rem;
+
+          .ng-fa-icon {
+            font-weight: 400;
+          }
+        }
+      }
+    }
+    .password-box {
+        flex-direction: column;
+        align-items: center;
+        form {
+            width: 45%;
+            padding: 2rem 0 1rem;
+            text-align: center;
+            label {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+            .custom-input {
+                background-color: #dadada;
+                color: #000;                
+                &:focus {
+                    outline: none;
+                    border: 1px solid rgb(216, 216, 216);
+                    box-shadow: 0 0 0 0.1rem rgb(216, 216, 216);
+                }
+            }
+        }
+
+        .keyboard {
+            width: 45%;
+            flex-wrap: wrap; 
+            .number {
+                width: calc(100% / 3);
+            }
+            .zero {
+                width: 100%;
+            }
+            .number, .zero {                
+                justify-content: center;
+                align-items: center;
+                background-color: $orange;
+                color: #fff;
+            }            
+        }
+    }
+  }
+}
