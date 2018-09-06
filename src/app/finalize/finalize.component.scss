@@ -8,6 +8,7 @@ body {
 
 // Variables Colors
 $orange: #F2905F;
+$orange-dark: #e87a42;
 $red: #EA6172;
 $green: #009688;
 $green-plus: #7ED321;
@@ -42,22 +43,23 @@ $green-plus: #7ED321;
         }
 
         h4 {
-            font-size: 0.9rem;
-            margin-bottom: 0;
-            font-weight: 400;
-            color: #fff;
-            opacity: 0.7;
-          }
+          font-size: 0.9rem;
+          margin-bottom: 0;
+          font-weight: 400;
+          color: #fff;
+          opacity: 0.7;
+        }
 
-          h1 {
-            font-size: 2rem;
-            margin-bottom: 0;
-            font-weight: 400;
-            color: #fff;
-          }
+        h1 {
+          font-size: 2rem;
+          margin-bottom: 0;
+          font-weight: 400;
+          color: #fff;
+        }
       }
+
       .close-top {
-          a {
+        a {
           text-decoration: none;
           color: #fff;
           font-size: 1.5rem;
@@ -68,44 +70,92 @@ $green-plus: #7ED321;
         }
       }
     }
+
     .password-box {
-        flex-direction: column;
-        align-items: center;
-        form {
-            width: 45%;
-            padding: 2rem 0 1rem;
-            text-align: center;
-            label {
-                font-size: 0.9rem;
-                font-weight: 500;
-            }
-            .custom-input {
-                background-color: #dadada;
-                color: #000;                
-                &:focus {
-                    outline: none;
-                    border: 1px solid rgb(216, 216, 216);
-                    box-shadow: 0 0 0 0.1rem rgb(216, 216, 216);
-                }
-            }
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 2rem;
+
+      form {
+        width: 45%;
+        padding: 2rem 0 1rem;
+        text-align: center;
+
+        label {
+          font-size: 0.9rem;
+          font-weight: 500;
         }
 
-        .keyboard {
-            width: 45%;
-            flex-wrap: wrap; 
-            .number {
-                width: calc(100% / 3);
-            }
-            .zero {
-                width: 100%;
-            }
-            .number, .zero {                
-                justify-content: center;
-                align-items: center;
-                background-color: $orange;
-                color: #fff;
-            }            
+        .custom-input {
+          background-color: #dadada;
+          color: #000;
+
+          &:focus {
+            outline: none;
+            border: 1px solid rgb(216, 216, 216);
+            box-shadow: 0 0 0 0.1rem rgb(216, 216, 216);
+          }
         }
+      }
+
+      .keyboard {
+        width: 45%;
+        flex-wrap: wrap;
+
+        .number {
+          width: calc(100% / 3);
+        }
+
+        .zero {
+          width: 100%;
+        }
+
+        .number,
+        .zero {
+          height: 108px;
+          justify-content: center;
+          align-items: center;
+          background-color: $orange;
+          color: #fff;
+          border: 1px solid rgba(255, 255, 255, 0.66);
+          cursor: pointer;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $orange-dark;
+          }
+        }
+      }
+
+      .password-footer {
+          width: 45%;
+          justify-content: space-between;
+          padding: 1rem 0;
+        a {
+          text-decoration: none;
+
+          .cancel, .confirm {
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+
+            p {
+                font-size: 1rem;
+                color: #fff;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+          }
+          .cancel {
+              background-color: $red;
+          }
+          .confirm {
+              background-color: $green-plus;
+          }
+        }
+      }
     }
   }
 }
