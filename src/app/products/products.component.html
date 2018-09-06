@@ -18,7 +18,7 @@
     <div class="product d-flex">
         <div class="product-in" *ngFor="let p of juice">
           <a [routerLink]="['/sucos', p.id]">
-            <img src="{{p.image}}" alt="">
+            <img style="padding: 0 1rem;" src="{{p.image}}" alt="">
             <div class="product-text">
               <h3>{{p.name}}</h3>
               <h4>{{p.price}}</h4>

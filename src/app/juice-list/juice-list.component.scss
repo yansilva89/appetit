@@ -70,16 +70,20 @@ $green-plus: #7ED321;
           max-width: 20%;
           justify-content: center;
           transition: padding 0.3s ease;
-          padding: 1rem;
           transition: opacity 0.3s ease;
           opacity: 0.6;
+          padding: 1rem;
 
           a {
             text-decoration: none;
 
             figure {
+              margin: 0;
               img {
                 width: 100%;
+                border: 2px solid $orange;
+                border-radius: 50%;
+                height: 100px;
               }
 
               .flavor-count {
@@ -113,6 +117,10 @@ $green-plus: #7ED321;
             a {
               figure {
                 position: relative;
+
+                img {
+                  height: 120px;
+                }
 
                 .flavor-count {
                   display: flex;
