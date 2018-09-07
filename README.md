@@ -1,4 +1,4 @@
-# Appetit Web (Incompleto)
+# Appetit Web (Incompleto) - https://appetit-web.herokuapp.com/ (Prod Version)
 Projeto criado utilizando Angular 6.
 
 * Aplicação voltada ao ramo alimentício para controle e gerenciamento de pedidos. Ex.: Lanches, sucos, adicionais.
